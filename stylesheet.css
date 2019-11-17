@@ -1,9 +1,5 @@
 <style>
-body{
-color:#444444;
-font-family:Times-New-Roman;
-background-color:orange;
-}
+
 h1{
 font-size:48px;
 }
@@ -32,10 +28,12 @@ margin: 20px;
  background-color: red;
  box-shadow: 0 0 4px grey;
  }
+ 
  section { 
   display: block;
 }
 section:hover{
   background-color: blue;
 }
+ 
 </style>
