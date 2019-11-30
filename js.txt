@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImg" src="compman.gif" width="107" height="98">
+
+<p>Click the button to display the height/width of the image.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg").height;
+   var y = document.getElementById("myImg").width;
+  document.getElementById("demo").innerHTML = x*y;
+}
+</script>
+
+</body>
+</html>
