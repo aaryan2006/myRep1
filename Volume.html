@@ -16,15 +16,15 @@ First number:<br>
   second number:<br>
    <input type="number" id="height" value="0">
 
-<button onclick="m()">Volume</button>
+<button onclick="m()">Multiply</button>
 <p id="outputFun"></p>
 <script>
     function m(){
     var l = document.getElementById("length").value;
     var w= document.getElementById("width").value;
     var h= document.getElementById("height").value;
-     if(l.length > 10000000000000000000){
-    alert("too much if a value"+alen);
+     if(l.length <0){
+    alert("negitive value"+alen);
     document.getElementById("length1").value=0;
   }
  else{
