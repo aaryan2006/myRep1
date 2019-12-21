@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2> volume</h2>
+<h2> Volume</h2>
 
 
 First number:<br>
@@ -13,7 +13,7 @@ First number:<br>
    <input type="number" id="width" value="0">
    <p>multiplied</p>
   
-  second number:<br>
+  third number:<br>
    <input type="number" id="height" value="0">
 
 <button onclick="m()">Multiply</button>
@@ -23,14 +23,14 @@ First number:<br>
     var l = document.getElementById("length").value;
     var w= document.getElementById("width").value;
     var h= document.getElementById("height").value;
-     if(l.length <0){
-    alert("negitive value"+alen);
-    document.getElementById("length").value=0;
-  }
- else{
-    var area2=document.getElementById("length").value*document.getElementById("width").value*document.getElementById("height").value;
-    document.getElementById("outputFun").innerHTML = "Area: "+area2;
- }
+     //if(l.length <0){
+    //alert("negitive value"+alen);
+   // document.getElementById("length").value=0;
+ // }
+ //else{
+    var volume2=document.getElementById("length").value*document.getElementById("width").value*document.getElementById("height").value;
+    document.getElementById("outputFun").innerHTML = "Volume: "+volume2;
+// }
 }
 
 
