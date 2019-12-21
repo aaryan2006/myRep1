@@ -4,7 +4,7 @@
 <h2> Volume</h2>
 
 
-First number:<br>
+first number:<br>
   <input type="number" id="length" value="0"">
   <br>
   <p>multiplied</p>
@@ -20,20 +20,20 @@ First number:<br>
 <p id="outputFun"></p>
 <script>
      function m(){
-     alert("MULTIPLY");
+     
     var l = document.getElementById("length").value;
     var w= document.getElementById("width").value;
     var h= document.getElementById("height").value;
-     //if(l.length <0){
+     if(l.length <0){
     //alert("negitive value"+alen);
-   // document.getElementById("length").value=0;
- // }
- //else{
+    document.getElementById("length").value=0;
+  }
+ else{
     var volume2=document.getElementById("length").value*document.getElementById("width").value*document.getElementById("height").value;
     document.getElementById("outputFun").innerHTML = "Volume: "+volume2;
-// }
+ }
 }
-
+</script>
 
 
 </html>
