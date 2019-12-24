@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
+</style>
+</head>
 <body>
-<h2> use this drop down menu to pick what you want to complete</h2>
-<select>
-  <option value="https://aaryan2006.github.io/myRep1/multiplier.html" target="iframe">area</option>
-  <option value="https://aaryan2006.github.io/myRep1/Volume.html" target="iframe">volume</option>
-  
-</select>
-<br>
-<br>
+
+<h2>choose</h2>
+<p>use the drop down menu see what you want to do</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+  <a href="https://aaryan2006.github.io/myRep1/multiplier.html" target="iframe">area</a>
+  <a href="https://aaryan2006.github.io/myRep1/Volume.html" target="iframe">volume</a>
+  <br>
+  <br>
+  <br>
 <iframe  src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg" height="500" width="600" name="iframe"></iframe>
+  </div>
+</div>
 
 
-<br>
-<a href="https://aaryan2006.github.io/myRep1/multiplier.html" target="iframe">multiply</a>
-<br>
-<a href="https://aaryan2006.github.io/myRep1/Volume.html" target="iframe">volume</a>
 </body>
 </html>
