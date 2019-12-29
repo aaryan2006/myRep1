@@ -10,9 +10,12 @@ h1{
   text-align: center;
   color: black;
 }
-.clearfix{
-  clear: both;
+footer{
+  display: block;
+  text-align: center;
+  padding-top: 20px;
 }
+
 #box{
   width: 350px;
   overflow: auto;
@@ -30,11 +33,10 @@ h1{
   margin: 10px;
   height: 70px;
   width: 70px;
- 
   background: black;
   color: yellow;
   list-style: numbered;
-  text-align: center;
+  text-align: right;
   border-radius: 5px;
 }
 #gameBoard li:hover, #reset:hover{
@@ -54,30 +56,30 @@ h1{
 }
 .x{
   color: red !important;
+  }
+.clearfix{
+  clear: both;
 }
-footer{
-  display: block;
-  text-align: center;
-  padding-top: 20px;
-}
+
+
 </head>
 </style>
   <body>
-<div class="text-center"id="box">
+<div class="text-center" id="box">
   <header>
-    <h1>Play Tic Tac Toe</h1>
+    <h1> Tic Tac Toe</h1>
   </header>
 <div id="message"></div>
   <ul id="gameBoard">
-    <li class="tic"id="0">#</li>
-    <li class="tic"id="1">#</li>
-    <li class="tic"id="2">#</li>
-    <li class="tic"id="3">#</li>
-    <li class="tic"id="4">#</li>
-    <li class="tic"id="5">#</li>
-    <li class="tic"id="6">#</li>
-    <li class="tic"id="7">#</li>
-    <li class="tic"id="8">#</li>
+    <li id="0">#</li>
+    <li id="1">#</li>
+    <li id="2">#</li>
+    <li id="3">#</li>
+    <li id="4">#</li>
+    <li id="5">#</li>
+    <li id="6">#</li>
+    <li id="7">#</li>
+    <li id="8">#</li>
   </ul>
   <div class="clearfix"></div>
 <footer>
@@ -86,5 +88,4 @@ footer{
 </div>
 </body>
 </html>
-
 
