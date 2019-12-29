@@ -41,7 +41,7 @@ footer{
 }
 #gameBoard li:hover, #reset:hover{
   cursor: pointer;
- 
+  
 }
 #reset{
   border: none ;
@@ -51,80 +51,67 @@ footer{
   padding: 15px;
   border-radius: 5px;
 }
-.o{
-  color: green !important;
-}
-.x{
-  color: red !important;
-  }
-.clearfix{
-  clear: both;
-}
 
-
-</head>
 </style>
+</head>
   <body>
 <div class="text-center" id="box">
   <header>
     <h1> Tic Tac Toe</h1>
   </header>
-<div id="message"></div>
   <ul id="gameBoard">
-    <li id="0">#</li>
-    <li id="1">#</li>
-    <li id="2">#</li>
-    <li id="3">#</li>
-    <li id="4">#</li>
-    <li id="5">#</li>
-    <li id="6">#</li>
-    <li id="7">#</li>
-    <li id="8">#</li>
+    <li id="0" onclick="pressedFunction()">#</li>
+    <li id="1" onclick="pressedFunction()">#</li>
+    <li id="2" onclick="pressedFunction()">#</li>
+    <li id="3" onclick="pressedFunction()">#</li>
+    <li id="4" onclick="pressedFunction()">#</li>
+    <li id="5" onclick="pressedFunction()">#</li>
+    <li id="6" onclick="pressedFunction()">#</li>
+    <li id="7" onclick="pressedFunction()">#</li>
+    <li id="8" onclick="pressedFunction()">#</li>
   </ul>
-  <div class="clearfix"></div>
+  
 <footer>
   <button id="reset">Reset</button>
 </footer>
 </div>
 <script>
-function pressed () {
-var 0 = document.getElementById("0");
-var 1 = document.getElementById("1");
-var 2 = document.getElementById("2");
-var 3 = document.getElementById("3");
-var 4 = document.getElementById("4");
-var 5 = document.getElementById("5");
-var 6 = document.getElementById("6");
-var 7 = document.getElementById("7");
-var 8 = document.getElementById("8");
-var 9 = document.getElementById("9");
+function pressedFunction() {
+					 //var 0 = document.getElementById("0");
+	alert("hi");	//var 1 = document.getElementById("1");
+					//var 2 = document.getElementById("2");
+					//var 3 = document.getElementById("3");
+					//var 4 = document.getElementById("4");
+					//var 5 = document.getElementById("5");
+					//var 6 = document.getElementById("6");
+					//var 7 = document.getElementById("7");
+					//var 8 = document.getElementById("8");
 
-if (0.clicked == true) {
-        0.style.backgroundColor = "red";
-    } else if (1.clicked == true) {
-        1.style.backgroundColor = "green";
-    } else if (2.clicked == true) {
-        2.style.backgroundColor = "blue";
-    }else if (3.clicked == true) {
-        3.style.backgroundColor = "yellow";
-    }else if (4.clicked == true) {
-        4.style.backgroundColor = "purple";
-    }else if (5.clicked == true) {
-        5.style.backgroundColor = "blue";
-    }else if (6.clicked == true) {
-        6.style.backgroundColor = "orange";
-    }else if (7.clicked == true) {
-        7.style.backgroundColor = "blue";
-    }else if (8.clicked == true) {
-        8.style.backgroundColor = "yellow";
-    }else if (9.clicked == true) {
-        9.style.backgroundColor = "red";
-    }else {
-        9.style.backgroundColor = "white";
-    };
-};
+
+					//if (0.clicked == true) {
+ 					   //    0.style.backgroundColor = "red";
+ 					  // } else if (1.clicked == true) {
+  					  //    1.style.backgroundColor = "green";
+					   // } else if (2.clicked == true) {
+ 					    //   2.style.backgroundColor = "blue";
+  					 // }else if (3.clicked == true) {
+					     //   3.style.backgroundColor = "yellow";
+   					// }else if (4.clicked == true) {
+  					   //   4.style.backgroundColor = "purple";
+  					 // }else if (5.clicked == true) {
+   					   //  5.style.backgroundColor = "blue";
+  					 // }else if (6.clicked == true) {
+  					   //   6.style.backgroundColor = "orange";
+  					 // }else if (7.clicked == true) {
+  					   //   7.style.backgroundColor = "blue";
+ 					  // }else if (8.clicked == true) {
+  					 //     8.style.backgroundColor = "yellow";
+  						  //}else {
+ 					    //   8.style.backgroundColor = "white";
+ 					   //};
+    					//}; 
 </script>
-pressed ();
+
 </body>
 </html>
 
