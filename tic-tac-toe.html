@@ -54,6 +54,7 @@ footer{
 
 
 </style>
+
 </head>
   <body>
 <div class="text-center" id="box">
@@ -61,15 +62,15 @@ footer{
     <h1> Tic Tac Toe</h1>
   </header>
   <ul id="gameBoard">
-    <li id="cell0" onclick="pressedFunction(this)">0</li>
-    <li id="cell1" onclick="pressedFunction(this)">1</li>
-    <li id="cell2" onclick="pressedFunction(this)">2</li>
-    <li id="cell3" onclick="pressedFunction(this)">3</li>
-    <li id="cell4" onclick="pressedFunction(this)">4</li>
-    <li id="cell5" onclick="pressedFunction(this)">5</li>
-    <li id="cell6" onclick="pressedFunction(this)">6</li>
-    <li id="cell7" onclick="pressedFunction(this)">7</li>
-    <li id="cell8" onclick="pressedFunction(this)">8</li>
+    <li id="cell0" onclick="pressedFunction(this)"></li>
+    <li id="cell1" onclick="pressedFunction(this)"></li>
+    <li id="cell2" onclick="pressedFunction(this)"></li>
+    <li id="cell3" onclick="pressedFunction(this)"></li>
+    <li id="cell4" onclick="pressedFunction(this)"></li>
+    <li id="cell5" onclick="pressedFunction(this)"></li>
+    <li id="cell6" onclick="pressedFunction(this)"></li>
+    <li id="cell7" onclick="pressedFunction(this)"></li>
+    <li id="cell8" onclick="pressedFunction(this)"></li>
   </ul>
   
 <footer>
@@ -77,42 +78,22 @@ footer{
 </footer>
 </div>
 <script>
-function pressedFunction(x) {
-var cell0 = document.getElementById("cell0");
-	var cell1 = document.getElementById("cell1");
-	var cell2 = document.getElementById("cell2");
-	var cell3 = document.getElementById("cell3");
-	var cell4 = document.getElementById("cell4");
-	var cell5 = document.getElementById("cell5");
-	var cell6 = document.getElementById("cell6");
-	var cell7 = document.getElementById("cell7");
-	var cell8 = document.getElementById("cell8");
+var sw= "O";
 
+function pressedFunction(curcell) {
 
-	if (cell0.clicked == true) {
-     alert("h");  
-  } else if (cell1.clicked == true) {
-  	alert("hi"); 
-	} else if (cell2.clicked == true) {
-    alert("hi"); 
-   }else if (cell3.clicked == true) {
-	  alert("hi"); 
-   	 }else if (cell4.clicked == true) {
-  		alert("hi"); 
-  		}else if (cell5.clicked == true) {
-   		 alert("hi"); 
-  		  }else if (cell6.clicked == true) {
-  		alert("hi"); 
-  		 }else if (cell7.clicked == true) {
-  		alert("hi"); 
- 		}else if (cell8.clicked == true) {
-  		alert("hi"); 
-  		  }else {
- 		alert("hi"); 
- 					   }
-	 
-    					} 
+if (sw=="O"){ 
+curcell.innerHTML="X";
+sw="X";
+}
+else{ 
+curcell.innerHTML="O";
+sw="O";
+}
+
+}
 </script>
+
 
 </body>
 </html>
