@@ -74,7 +74,7 @@ footer{
   </ul>
   
 <footer>
-  <button id="reset" onclick="reset()">Reset</button>
+  <button onclick="reset()" id="reset" >Reset</button>
 </footer>
 </div>
 <script>
@@ -93,15 +93,15 @@ sw="O";
 
 }
 function reset() {
-document.getElementById("cell0").value="<br>";
-document.getElementById("cell1").value="<br>";
-document.getElementById("cell2").value="<br>";
-document.getElementById("cell3").value="<br>";
-document.getElementById("cell4").value="<br>";
-document.getElementById("cell5").value="<br>";
-document.getElementById("cell6").value="<br>";
-document.getElementById("cell7").value="<br>";
-document.getElementById("cell8").value="<br>";
+document.getElementById("cell0").innerHTML="<br>";
+document.getElementById("cell1").innerHTML="<br>";
+document.getElementById("cell2").innerHTML="<br>";
+document.getElementById("cell3").innerHTML="<br>";
+document.getElementById("cell4").innerHTML="<br>";
+document.getElementById("cell5").innerHTML="<br>";
+document.getElementById("cell6").innerHTML="<br>";
+document.getElementById("cell7").innerHTML="<br>";
+document.getElementById("cell8").innerHTML="<br>";
 }
 
 </script>
@@ -109,5 +109,4 @@ document.getElementById("cell8").value="<br>";
 
 </body>
 </html>
-
 
