@@ -75,10 +75,30 @@ footer{
   
 <footer>
   <button onclick="reset()" id="reset" >Reset</button>
+  
+  <select id="mySelect" onchange="PlayerSelection()">
+  <option value="X">Choose Player X</option>
+  <option value="Y">Choose Player Y</option>
+</select>
+   
 </footer>
 </div>
+
 <script>
-var sw= "O";
+var sw="O";
+
+function PlayerSelection() {
+  var S = document.getElementById("mySelect").value;
+  if (S=="X"){
+   sw="O";
+  }
+  else{
+   sw="X"
+  }
+ 
+}
+
+
 
 function pressedFunction(curcell) {
 
