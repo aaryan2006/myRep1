@@ -62,15 +62,15 @@ footer{
     <h1> Tic Tac Toe</h1>
   </header>
   <ul id="gameBoard">
-    <li id="cell0" onclick="pressedFunction(this)"></li>
-    <li id="cell1" onclick="pressedFunction(this)"></li>
-    <li id="cell2" onclick="pressedFunction(this)"></li>
-    <li id="cell3" onclick="pressedFunction(this)"></li>
-    <li id="cell4" onclick="pressedFunction(this)"></li>
-    <li id="cell5" onclick="pressedFunction(this)"></li>
-    <li id="cell6" onclick="pressedFunction(this)"></li>
-    <li id="cell7" onclick="pressedFunction(this)"></li>
-    <li id="cell8" onclick="pressedFunction(this)"></li>
+    <li id="cell0" onclick="pressedFunction(this)" ></li>
+    <li id="cell1" onclick="pressedFunction(this)" ></li>
+    <li id="cell2" onclick="pressedFunction(this)" ></li>
+    <li id="cell3" onclick="pressedFunction(this)" ></li>
+    <li id="cell4" onclick="pressedFunction(this)" ></li>
+    <li id="cell5" onclick="pressedFunction(this)" ></li>
+    <li id="cell6" onclick="pressedFunction(this)" ></li>
+    <li id="cell7" onclick="pressedFunction(this)" ></li>
+    <li id="cell8" onclick="pressedFunction(this)" ></li>
   </ul>
   
 <footer>
@@ -123,10 +123,59 @@ document.getElementById("cell6").innerHTML="<br>";
 document.getElementById("cell7").innerHTML="<br>";
 document.getElementById("cell8").innerHTML="<br>";
 }
+function winner(){
+if (cell0 =="O" && cell4 =="O" && cell8=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell0 =="X" && cell4 =="X" && cell8=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell2=="O" && cell4 =="O" && cell6=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell2=="X" && cell4 =="X" && cell6=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell0=="X" && cell1 =="X" && cell2=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell0=="O" && cell1 =="O" && cell2=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell2=="X" && cell5 =="X" && cell8=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell2=="O" && cell5 =="O" && cell8=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell8=="X" && cell7 =="X" && cell6=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell8=="O" && cell7 =="O" && cell6=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell6=="X" && cell3 =="X" && cell0=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell6=="O" && cell3 =="O" && cell0=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell1=="X" && cell4 =="X" && cell7=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell1=="O" && cell4 =="O" && cell7=="O"){
+alert("PLayer O Won!!!");
+}
+if(cell3=="X" && cell4 =="X" && cell5=="X"){
+alert("PLayer X Won!!!");
+}
+if(cell3=="O" && cell4 =="O" && cell5=="O"){
+alert("PLayer O Won!!!");
+}
+  }
 
 </script>
 
 
 </body>
 </html>
-
