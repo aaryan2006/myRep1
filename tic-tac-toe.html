@@ -110,7 +110,7 @@ else{
 curcell.innerHTML="O";
 sw="O";
 }
-
+winner();
 }
 function reset() {
 document.getElementById("cell0").innerHTML="<br>";
@@ -122,54 +122,66 @@ document.getElementById("cell5").innerHTML="<br>";
 document.getElementById("cell6").innerHTML="<br>";
 document.getElementById("cell7").innerHTML="<br>";
 document.getElementById("cell8").innerHTML="<br>";
+
 }
 function winner(){
+var cell0 = document.getElementById("cell0").innerHTML;
+var cell1 = document.getElementById("cell1").innerHTML;
+var cell2 = document.getElementById("cell2").innerHTML;
+var cell3 = document.getElementById("cell3").innerHTML;
+var cell4 = document.getElementById("cell4").innerHTML;
+var cell5 = document.getElementById("cell5").innerHTML;
+var cell6 = document.getElementById("cell6").innerHTML;
+var cell7 = document.getElementById("cell7").innerHTML;
+var cell8 = document.getElementById("cell8").innerHTML;
+
+
 if (cell0 =="O" && cell4 =="O" && cell8=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell0 =="X" && cell4 =="X" && cell8=="X"){
+else if(cell0 =="X" && cell4 =="X" && cell8=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell2=="O" && cell4 =="O" && cell6=="O"){
+else  if(cell2=="O" && cell4 =="O" && cell6=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell2=="X" && cell4 =="X" && cell6=="X"){
+else if(cell2=="X" && cell4 =="X" && cell6=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell0=="X" && cell1 =="X" && cell2=="X"){
+else if(cell0=="X" && cell1 =="X" && cell2=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell0=="O" && cell1 =="O" && cell2=="O"){
+else if(cell0=="O" && cell1 =="O" && cell2=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell2=="X" && cell5 =="X" && cell8=="X"){
+else if(cell2=="X" && cell5 =="X" && cell8=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell2=="O" && cell5 =="O" && cell8=="O"){
+else if(cell2=="O" && cell5 =="O" && cell8=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell8=="X" && cell7 =="X" && cell6=="X"){
+else if(cell8=="X" && cell7 =="X" && cell6=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell8=="O" && cell7 =="O" && cell6=="O"){
+else if(cell8=="O" && cell7 =="O" && cell6=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell6=="X" && cell3 =="X" && cell0=="X"){
+else if(cell6=="X" && cell3 =="X" && cell0=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell6=="O" && cell3 =="O" && cell0=="O"){
+else if(cell6=="O" && cell3 =="O" && cell0=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell1=="X" && cell4 =="X" && cell7=="X"){
+else if(cell1=="X" && cell4 =="X" && cell7=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell1=="O" && cell4 =="O" && cell7=="O"){
+else if(cell1=="O" && cell4 =="O" && cell7=="O"){
 alert("PLayer O Won!!!");
 }
-if(cell3=="X" && cell4 =="X" && cell5=="X"){
+else if(cell3=="X" && cell4 =="X" && cell5=="X"){
 alert("PLayer X Won!!!");
 }
-if(cell3=="O" && cell4 =="O" && cell5=="O"){
+else if(cell3=="O" && cell4 =="O" && cell5=="O"){
 alert("PLayer O Won!!!");
 }
   }
