@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -80,20 +80,50 @@ footer{
   <option value="X">Choose Player X</option>
   <option value="Y">Choose Player O</option>
 </select>
-   
+   CPU: <input type="checkbox" id="CPUCheck">
+
 </footer>
 </div>
+    // Keep running loop till you find an empty box
+    if(S!="O" && S!="X" ){
 
 <script>
+var CPUsw=0;///////////////////////////////////////////////what do we need this for
 var sw="O";
+var cpuFlag= document.getElementById("CPUCheck").checked;/////what do we need this
+var CPUPlayer="O";////////////////////////////////what do we need this for
+
+
+function cpu(){
+ while(true){
+    var cbox= Math.floor(Math.random() * 9);
+
+    var cellX="cell"+cbox; //////////////// why do we need this and what is "cell"
+    
+    var S = document.getElementById(cellX).value;// this finds out the value to
+    alert(cellX+S);
+    //cellx 
+    // Keep running loop till you find an empty box
+    if(S!="O" || S!="X" ){
+    	document.getElementById(cellX).innerHTML=CPUPlayer;
+        break;
+    }
+ }
+ sw=CPUPlayer;
+
+}
 
 function PlayerSelection() {
-  var S = document.getElementById("mySelect").value;
+cpuFlag= document.getElementById("CPUCheck").checked;////isn't this already in var
+//alert("CPU FLAG"+cpuFlag);
+ var S = document.getElementById("mySelect").value;
   if (S=="X"){
    sw="O";
+   CPUPlayer="O";
   }
   else{
-   sw="X"
+   sw="X";
+   CPUPlayer="X";
   }
  
 }
@@ -101,16 +131,30 @@ function PlayerSelection() {
 
 
 function pressedFunction(curcell) {
+cpuFlag= document.getElementById("CPUCheck").checked;
 
-if (sw=="O"){ 
-curcell.innerHTML="X";
-sw="X";
-}
-else{ 
-curcell.innerHTML="O";
-sw="O";
-}
+//if (CPUsw==0){////////I know this is defined in var but why do we need this
+
+    if (sw=="O"){ 
+    curcell.innerHTML="X";////////////Why do we need curcell.innerHTML="X"
+    sw="X";///////////////////////////why do we need sw="X"
+
+    }
+    else{ 
+    curcell.innerHTML="O";////////////Why do we need curcell.innerHTML="O"
+    sw="O";////////////////////////////why do we need sw="O"
+    }
+ //}
+ if (cpuFlag==true){//////////////This Just means cpu is on right?
+ //if (CPUsw==0){///////////why do we need this
+// CPUsw=1;/////////////////why does it have to be one
+ //}
+ alert("CPU Turn");
+ cpu();////////////////why are we calling the cpu function
+ //CPUsw=0;////////////////why does it have to be zero
+ }
 winner();
+
 }
 function reset() {
 document.getElementById("cell0").innerHTML="<br>";
