@@ -84,8 +84,8 @@ footer{
 
 </footer>
 </div>
-    // Keep running loop till you find an empty box
-    if(S!="O" && S!="X" ){
+    <!Keep running loop till you find an empty box>
+   if(S!="O" && S!="X" ){
 
 <script>
 var CPUsw=0;///////////////////////////////////////////////what do we need this for
@@ -100,13 +100,23 @@ function cpu(){
 
     var cellX="cell"+cbox; //////////////// why do we need this and what is "cell"
     
-    var S = document.getElementById(cellX).value;// this finds out the value to
+    var S = document.getElementById(cellX).innerHTML;// this finds out the value to
     alert(cellX+S);
     //cellx 
     // Keep running loop till you find an empty box
-    if(S!="O" || S!="X" ){
+    if (S=="O"){
+   		alert("value of S"+S);
+    
+    }
+    else if(S=="X"){
+   alert("Value of S"+S);
+    }
+    else{
+    
     	document.getElementById(cellX).innerHTML=CPUPlayer;
+        alert("Value of S"+S);
         break;
+    	
     }
  }
  sw=CPUPlayer;
@@ -116,7 +126,7 @@ function cpu(){
 function PlayerSelection() {
 cpuFlag= document.getElementById("CPUCheck").checked;////isn't this already in var
 //alert("CPU FLAG"+cpuFlag);
- var S = document.getElementById("mySelect").value;
+ var S = document.getElementById("mySelect").innerHTML;
   if (S=="X"){
    sw="O";
    CPUPlayer="O";
