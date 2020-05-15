@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -101,20 +101,24 @@ function cpu(){
     var cellX="cell"+cbox; //////////////// why do we need this and what is "cell"
     
     var S = document.getElementById(cellX).innerHTML;// this finds out the value to
-    alert(cellX+S);
+    //alert(cellX+S);
     //cellx 
     // Keep running loop till you find an empty box
     if (S=="O"){
-   		alert("value of S"+S);
+   		//alert("value of S"+S);
     
     }
     else if(S=="X"){
-   alert("Value of S"+S);
+  // alert("Value of S"+S);
     }
+    else if(winner === true){
+  break;
+    }
+    
     else{
     
     	document.getElementById(cellX).innerHTML=CPUPlayer;
-        alert("Value of S"+S);
+        //alert("Value of S"+S);
         break;
     	
     }
@@ -159,7 +163,7 @@ cpuFlag= document.getElementById("CPUCheck").checked;
  //if (CPUsw==0){///////////why do we need this
 // CPUsw=1;/////////////////why does it have to be one
  //}
- alert("CPU Turn");
+ //alert("CPU Turn");
  cpu();////////////////why are we calling the cpu function
  //CPUsw=0;////////////////why does it have to be zero
  }
